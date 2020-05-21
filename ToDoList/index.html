@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sweetAlert/node_modules/sweetalert2/dist/sweetalert2.css">
+</head>
+<body>
+    
+
+<!-- Start todo container  -->
+<div class="todo-container">
+    
+    <div class="add-task">
+        <textarea cols="30" rows="10"></textarea>
+        <span class="plus" title="add task">+</span>
+        <span class="delete-all" title="Delete All">D</span>
+        <span class="finish-all" title="Finish All">F</span>
+    </div>
+
+    <div class="tasks-content">
+        <span class="no-tasks-message">No tasks ... just relax</span>
+        
+
+    </div>
+
+</div>
+<!-- End todo container -->
+
+
+<!-- Start task stats  -->
+<div class="task-stats">
+    <div class="tasks-count">
+       Tasks <span>0</span>
+    </div>
+
+    <div class="tasks-completed">
+      Completed <span>0</span>
+    </div>
+</div>
+<!-- End task stats -->
+
+
+<script src="main.js"></script>
+<script src="sweetAlert/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+@media screen and (max-width: 600px) {
+   
+
+
+.control-buttons span{
+    font-size: 20px;
+}
+
+.winning-screen .title{
+    font-size: 30px;
+}
+
+.winning-screen .replay{
+    font-size: 20px;
+}
+
+
+.info-container{
+    width:70%;
+    margin: 20px auto 0 20px;
+    background-color: #F6F6F6;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    border : 2px solid #607d8b;
+}
+
+
+.memory-game-blocks{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.memory-game-blocks .game-block{
+    height: 100px;
+    width: 100px;
+    margin: 3px 1px ;
+}
+
+.memory-game-blocks .game-block .front{
+    background-color: #111;
+    line-height: 200%;
+    font-size: 300%;
+}
+}
+
+@media screen and (max-width: 300px) {
+body{
+    background-color: indigo;
+}
+.memory-game-blocks{
+    display: flex;
+    width: 380px;
+    margin: auto;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+}

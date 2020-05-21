@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styleMobile.css">
+    <title>MemoryGame</title>
+
+</head>
+<body>
+
+
+<!-- Start splash screen -->
+
+<div class="control-buttons">
+    <span>Start Game</span>
+</div>
+
+<!-- End splash screen -->
+
+
+<!-- Start winning screen -->
+<div class="winning-screen">
+    <span class="title">Motorak</span>
+    <span class="replay">Play again</span>
+</div>
+<!-- End winning screen -->
+
+
+
+<!-- Start info container  -->
+<div class="info-container">
+
+    <div class="tries">
+        Wrong tries : <span>0</span>
+    </div>
+
+</div>
+<!-- End info container -->
+
+<!-- Start game blocks  -->
+<div class="memory-game-blocks">
+
+    <!-- Start block 1 -->
+    <div class="game-block" data-face="">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/1.png" alt="">
+        </div>
+    </div>
+
+    <div class="game-block" data-face="">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/1.png" alt="">
+        </div>
+    </div>
+    <!-- End block 1 -->
+
+    <!-- Start block 2 -->
+    <div class="game-block" data-face="2">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/2.png" alt="">
+        </div>
+    </div>
+
+    <div class="game-block" data-face="2">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/2.png" alt="">
+        </div>
+    </div>
+    <!-- End block 2 -->
+
+    <!-- Start block 3 -->
+    <div class="game-block" data-face="3">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/3.png" alt="">
+        </div>
+    </div>
+
+    <div class="game-block" data-face="3">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/3.png" alt="">
+        </div>
+    </div>
+    <!-- End block 3 -->
+
+    <!-- Start block 4 -->
+    <div class="game-block" data-face="4">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/4.png" alt="">
+        </div>
+    </div>
+
+    <div class="game-block" data-face="4">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/4.png" alt="">
+        </div>
+    </div>
+    <!-- End block 4 -->
+    
+
+    <!-- Start block 5 -->
+    <div class="game-block" data-face="6">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/5.png" alt="">
+        </div>
+    </div>
+
+    <div class="game-block" data-face="6">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/5.png" alt="">
+        </div>
+    </div>
+    <!-- End block 5 -->
+
+    <!-- Start block 6 -->
+    <div class="game-block" data-face="7">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/6.png" alt="">
+        </div>
+    </div>
+
+    <div class="game-block" data-face="7">
+        <div class="front face"></div>
+        <div class="back face">
+            <img src="images/6.png" alt="">
+        </div>
+    </div>
+    <!-- End block 6 -->
+
+</div>
+<!-- End game blocks  -->
+
+<audio src="audio/success1.mp3" preload="auto" id="success1"></audio>
+<audio src="audio/success2.mp3" preload="auto" id="success2"></audio>
+<audio src="audio/success3.mp3" preload="auto" id="success3"></audio>
+
+<audio src="audio/fail1.mp3" preload="auto" id="fail1"></audio>
+<audio src="audio/fail2.mp3" preload="auto" id="fail2"></audio>
+<script src="main.JS"></script>
+</body>
+</html>

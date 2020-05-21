@@ -1,0 +1,168 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333333;
+    height: auto;
+}
+
+
+/* Start splash screen */
+
+.control-buttons{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(3, 169, 100,.9);
+    
+}
+
+.control-buttons span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: wheat;
+    background-color: tomato;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* End splash screen */
+
+
+/* Start winning screen */
+
+.winning-screen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(3, 169, 100,1);
+    display: none;  
+}
+
+.winning-screen .title {
+    position: absolute;
+    left:50%;
+    top:30%;
+    transform: translate(-50%,-50%);
+    color: red;
+    padding: 15px 25px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+
+
+.winning-screen .replay{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: wheat;
+    background-color: tomato;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+/* End winning screen */
+
+
+/* Start information container */
+
+.info-container{
+    width:41%;
+    margin: 20px auto 0 375px;
+    background-color: #F6F6F6;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    border : 2px solid #607d8b;
+}
+
+.info-container .tries span{
+    color: red;
+    font-weight: bolder;
+}
+/* End information container */
+
+/* Start Blocks */
+.memory-game-blocks{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.memory-game-blocks.no-clicking{
+    pointer-events: none;
+}
+
+.memory-game-blocks .game-block{
+    height: 155px;
+    width: 155px;
+    transition: transform .5s;
+    transform-style:preserve-3d;  /* give the block 3D properties to be able to deal with the flipping */ 
+    cursor: pointer;
+    position: relative;
+    flex: 0 1 auto;
+    margin: 3px 1px ;
+}
+
+.memory-game-blocks .game-block .front{
+    background-color: #111;
+    line-height: 180%;
+    font-size: 500%;
+}
+
+
+.memory-game-blocks .game-block .back{
+    height: 155px;
+    background-color: #607d8b;
+    transform: rotateY(180deg);
+}
+
+.memory-game-blocks .game-block .back img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+}
+
+.memory-game-blocks .game-block .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid slategray;
+    border-radius: 10px;
+}
+
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-match{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+/* End Blocks */
