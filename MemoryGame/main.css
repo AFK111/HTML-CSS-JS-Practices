@@ -90,7 +90,7 @@ body{
 /* Start information container */
 
 .info-container{
-    width:41%;
+    width:55%;
     margin: 20px auto 0 375px;
     background-color: #F6F6F6;
     padding: 20px;
@@ -108,7 +108,7 @@ body{
 /* Start Blocks */
 .memory-game-blocks{
     display: flex;
-    width: 50%;
+    width: 40%;
     margin: auto;
     flex-wrap: wrap;
     margin: 20px auto;
