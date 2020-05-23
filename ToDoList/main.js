@@ -5,7 +5,7 @@ Tasks :
 [3 Done] Create delete all tasks button
 [4 Done] Create finish all tasks button
 [5 Done] put alert when click delete all or delete
-[6] Add tasks to the local storage
+[6 Done] Add tasks to the local storage
 */
 
 //setting up variables
