@@ -26,7 +26,7 @@ function getRepos(){
     if(theInput.value != ""){ // if theInpute filed contains username
         
         fetch(`https://api.github.com/users/${theInput.value}/repos`)
-        .then( (res) => {return res.json();} )
+        .then( (response) => {return response.json();   } )       // extract the json file from the http requist
         .then( (repositories) => {
 
             //empty the show-data div
