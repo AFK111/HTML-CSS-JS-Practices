@@ -1,0 +1,25 @@
+[01 Done] - Create JSON file for questions .
+[02 Done] - Start creating HTML markup .
+[03 Done] - Add dummy data [testing data , get it from JSON file by ajax (XHR XML Http Request)] .
+[04 Done] - Style the HTML element .
+[05 Done] - Fetch number of questions from JSON object .
+[06 Done] - Show questions count and questions category .
+[07 Done] - Show the number of the current bullets .
+[08 Done] - Set the number of the right and wrong answers and the number of question that doesn't have answer .
+[09] - Create countdown timer .
+[10 Done] - Fetch the questions from the JSON object .
+[11 Done] - Show first question .
+[12 Done] - Check the answer and hide the current question and show the next one .
+[13] - If the countdown timer gets finished , Mark the question as unknown question [no answer] .
+[14 Done] - Add class on bullet after answering the question .
+[15 Done] - If questions get the end then show the result .
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Ideas [features to add after the videos get finished] : 
+
+- Many JSON objects[each one has questions to specific subject] and make the user choose which object we will Fetch the data from .
+- Show not all question in the JSON object , just show specific number [e.g. random 10 questions each time ] .
+- Randomize the choices of ecah question [don't make at the same all the time].  //hint : use shuffle function .
+- Show the result of each question immediatly .
+- for each JSON object[subject] may clustered each 30 question together .

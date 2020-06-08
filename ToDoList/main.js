@@ -2,10 +2,11 @@
 Tasks : 
 [1 Done] Use sweet alert if input is empty  and when task is here and delete tasks.
 [2 Done] Check if task Is exist.
-[3 Done] Create delete all tasks button
-[4 Done] Create finish all tasks button
-[5 Done] put alert when click delete all or delete
-[6 Done] Add tasks to the local storage
+[3 Done] Create delete all tasks button.
+[4 Done] Create finish all tasks button.
+[5 Done] put alert when click delete all or delete.
+[6 Done] Add tasks to the local storage.
+[7] sort local storage content.
 */
 
 //setting up variables

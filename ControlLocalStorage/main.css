@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent{
+    width: 600px;
+    margin: 40px auto;
+    background-color: #EEE;
+    padding: 20px; 
+}
+
+.parent input{
+    border : none;
+    padding: 15px;
+    margin-bottom: 15px;
+    width:100%;
+    font-size: 20px;
+}
+
+.parent input:focus{
+    outline: none;
+}
+
+.parent .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.parent .buttons span{
+    background-color: #009688;
+    text-align:center;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.parent .result{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border:2px dashed #EEE;
+    text-align: center;
+}
+
+.parent .result span span{
+    font-weight: bold;
+    color: #009688;
+}
+
+.parent .result span .keys{
+    display: block;
+    text-align: left;
+}
