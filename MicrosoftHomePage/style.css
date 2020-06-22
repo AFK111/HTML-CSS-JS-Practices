@@ -249,6 +249,8 @@ footer.main-footer li{
 /* End Footer */
 
 
+/* Start Medeia Query */
+
 @media(max-width:700px){
     .menu-btn{
         display: block;
@@ -335,3 +337,5 @@ footer.main-footer li{
         margin-top: 30px;
     }
 }
+
+/* End Medeia Query */

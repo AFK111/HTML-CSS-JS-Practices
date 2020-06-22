@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML HTTP REQUEST --AJAX--</title>
+</head>
+<body>
+ <h1>Ahmad will not reload</h1>      
+<button onclick="getRepos()">XML Http Request [AJAX]</button>
+
+<div id="repos"></div>   
+ 
+
+
+
+ <script>
+
+
+function getRepos(){
+    //this request will execute in background and will not reload the page .[XHR]
+    var myRequest = new XMLHttpRequest();
+    myRequest.open("POST" , "test.php" ,true);  // true:Asyncronus[will not execute any thing until the request is done] .   // flase:Syncronous[will execute the next code while request is processed].
+    myRequest.setRequestHeader(   "content-type","application/x-www-form-urlencoded"); //this statement needed when we use "post" method and must be after open and before send . 
+    myRequest.send("name=afk");
+   
+   
+    myRequest.onreadystatechange = function(){
+        //when data is fetched and ready to use
+        if(myRequest.readyState === 4 && myRequest.status === 200){
+            //this how you can get the data [myRequest.responseText] .
+            document.getElementById("repos").innerHTML = myRequest.responseText;  
+            //console.log(JSON.parse(myRequest.responseText)); //json.parse to convert from text to js object
+        }
+    };
+}
+
+ </script>
+<!-- you can see more explaination in zero web school channel on youtube course[AJAX]... -->
+</body>
+</html>
