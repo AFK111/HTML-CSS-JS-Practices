@@ -1,0 +1,40 @@
+.header{
+    padding:20px 0;
+    overflow: hidden;
+    border-bottom:1px solid $greyColor;
+    text-transform: uppercase;
+    .logo{
+        width: 30%;
+        float: $float-left;
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        p{
+
+        }
+    }
+
+    .navbar{
+        width: 70%;
+        float: $float-left;
+        background-color: $redColor;
+        border-radius: 15px;
+        li{
+            width: 20%;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            
+            a{
+                text-decoration: none;
+                color:#fff;
+                display: block;
+                padding:20px 10px;
+                &:hover{
+                    color: #ddd;
+                }
+            }    
+        }
+    }
+}

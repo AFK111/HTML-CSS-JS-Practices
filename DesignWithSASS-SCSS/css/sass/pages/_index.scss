@@ -1,0 +1,47 @@
+
+
+/* Start Slider */
+
+.slider{
+    blockquote{
+        font: {
+            size:20px;
+            style:italic;
+            weight:300;
+            family: tahoma , arial;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+    }
+    img{
+        max-width: 100%;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height:20px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border:3px solid $greyColor;
+            cursor: pointer;
+            &.active{
+                border:3px solid #333;
+                background:white;
+            }
+            &:hover{
+                border:3px solid #333;
+            }
+        }
+    }
+}
+
+
+/* End Slider */
