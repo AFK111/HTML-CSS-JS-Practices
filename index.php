@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JS Apps</title>
+	<title>HTML-CSS-JS Practices</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/ico" href="practice-icon1.png">
 </head>
