@@ -1,3 +1,44 @@
+
+/* start hamburger list */
+
+/* end hamburger list */
+
+.ham-list{
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    width: 43px;
+    height: 43px;
+    background-color: $redColor;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+    span{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 3px;
+    }
+    span:first-child{
+        top:35%;
+    }
+    span:last-child{
+        top:66%;
+    }
+    @media (min-width:537px){
+        display: none;   
+        
+    } 
+}
+
+
+/* Start header */
+
 .header{
     padding:20px 0;
     overflow: hidden;
@@ -6,12 +47,28 @@
     .logo{
         width: 30%;
         float: $float-left;
+        @media (max-width: 1200px){
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media (max-width:536px){
+            text-align: $text-left;
+            font-size: 15px;
+        }
+        @media (max-width:330px){
+            text-align: $text-left;
+            font-size: 13px;
+        }
+        @media (max-width:290px){
+            text-align: $text-left;
+            font-size: 10px;
+        }
+        
+
         h1{
             margin-bottom: 0;
             margin-top: 10px;
-        }
-        p{
-
         }
     }
 
@@ -20,12 +77,37 @@
         float: $float-left;
         background-color: $redColor;
         border-radius: 15px;
+        @include prefixer(transition ,all .5s , webkit moz o ms);
+        @media (max-width: 1200px){
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width: 700px){
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width:536px){
+            overflow: hidden;
+            float: none;
+            height: 0px;  
+        }
         li{
             width: 20%;
             float: left;
             font-size: 20px;
             text-align: center;
             
+            @media (max-width: 700px){
+                font-size: 15px;
+            }
+            @media (max-width: 600px){
+                font-size: 14px;
+            }
+            @media (max-width:536px){
+                display: block;
+                width: 100%;
+                float: none;
+            }
             a{
                 text-decoration: none;
                 color:#fff;
@@ -38,3 +120,8 @@
         }
     }
 }
+
+.show-navbar{
+    height: 280px !important;
+}
+/* Start header */

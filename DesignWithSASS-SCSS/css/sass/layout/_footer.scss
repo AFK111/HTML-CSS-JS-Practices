@@ -1,0 +1,130 @@
+/* Start Footer */
+
+.footer{
+    background-color: #ccc;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .section-title{
+        color:#111;
+        font-weight: normal;
+    }
+    .gallery , .info , .contact{
+        float: $float-left;   
+    }
+    .gallery{
+        @media #{$minSmall}{
+            width: 100%;
+        }
+        @media #{$minMedium}{
+            width: 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 20px;
+            img{
+                width: 150px;
+                height: 150px;
+                float: $float-left;
+                border: 7px solid #222;
+                border-radius: 10px;
+                @media (max-width:450px){
+                    float: none;
+                    display: block;     
+                    margin: auto;
+                }
+            }   
+            .text{
+                float: $float-left;
+                width: calc(100% - 150px - 30px);
+                margin-right: 15px;
+                margin-left: 15px;
+                @media (max-width:450px){
+                    float: none;     
+                    width: 100%;
+                    text-align: center;
+                    margin: auto;
+                }
+                h4{
+                    color:$redColor;
+                    margin:10px 0 0;
+                }
+                p{
+                    color: #888;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .info{
+        
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMedium}{
+            width: 25%;
+        }
+        ul{
+            li{
+                color: #888;
+                span{
+                    color:$redColor;
+                }
+            }
+        }
+        h4{
+            color:#888;
+            font-weight: bolder;
+            margin-bottom: 0px;
+        }
+        p{
+            color: #888;
+            margin-top: 5px;
+        }
+    }
+    .contact{
+        @media #{$minSmall}{
+            width: 50%;
+            
+        }
+        @media #{$minMedium}{
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            outline: none;
+            border:1px solid #c9c9c9;
+            padding:10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea{
+           height: 140px; 
+        }
+    }
+    .copyright{
+        padding:25px 0;
+        border-top: 1px solid #999;
+        overflow: hidden;
+        color: #888;
+        margin-top: 30px;
+        @media (max-width:450px){
+            font-size: 10px;
+        }
+        .text{
+            float: $float-left;
+            width: 50%;
+        }
+        .author{
+            float:$float-left;
+            width: 50%;
+            text-align: $text-right;
+        }
+    }
+}
+
+
+
+/* End Footer */

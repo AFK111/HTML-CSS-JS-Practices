@@ -52,3 +52,15 @@
     }
         
 }
+
+/*
+    ** opacity mixin
+    ** make IE browser supports opacity property 
+*/
+
+@mixin opacity($val){
+    zoom:1;
+    $opacity-ie: $val * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $val;
+}
