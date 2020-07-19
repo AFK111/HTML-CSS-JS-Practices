@@ -1,0 +1,66 @@
+/*
+    ** Media query mixin for help only
+    ** Demo Version only for the course
+
+*/
+@mixin minMedium {
+    @media (min-width: 992px){
+        @content;
+    }
+}
+
+
+/*
+    ** Overlay Mixin
+*/
+
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    ** Prefixes mixin
+    ** Auto add prefixes to properties 
+*/
+@mixin prefixer($property , $value , $prefixes: ()){
+
+
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+
+}
+
+/*
+    ** @keyframes animation mixin
+    ** Auto add prefixes to @keframes 
+*/
+@mixin KFramesPrefixer($animation-name) {
+    @-moz-keyframes #{$animation-name}{
+        @content;
+    }
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @keyframes #{$animation-name}{
+        @content;
+    }
+        
+}
+
+/*
+    ** opacity mixin
+    ** make IE browser supports opacity property 
+*/
+
+@mixin opacity($val){
+    zoom:1;
+    $opacity-ie: $val * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $val;
+}
