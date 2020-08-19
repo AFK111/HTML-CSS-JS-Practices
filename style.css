@@ -13,17 +13,18 @@ body{
 	width: 100%;
 	margin-top: 50px;
 	padding: 20px 50px;
-	background: linear-gradient(90deg, #FFC00B , #000FFF);
+	background: linear-gradient(90deg, #FFBF7B , #001002);
 }
 
 a{	
 
 	display: inline-block;
 	text-decoration: none;
-	color: green;
-	background-color: wheat;
+	color: black;
+	background-color: seagreen;
 	padding: 5px 7px;
 	margin-right: 20px; 
 	margin-bottom: 20px;
 	font-size: 30px;
+	border-radius: 5px;
 }
