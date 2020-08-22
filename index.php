@@ -7,6 +7,7 @@
 </head>
 <body>
 	<div class="container">	
+
 		<a href="ToDoList">ToDo List</a>
 		<a href="FetchGithubReposByUsername">github Repos</a>
 		<a href="MemoryGame">Memory Game</a>
@@ -21,6 +22,7 @@
 		<a href="CarMovingWithCssAnimation">Car Moving With Css Animation</a>
 		<a href="HamburgerMenu">Hamburger Menu</a>
 		<a href="DesignWithSASS-SCSS">Design WithSASS-SCSS</a>	
+		<a href="CSSAnimations">CSS Animations</a>
 	</div>
 </body> 
 </html>
