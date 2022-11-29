@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarBucks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/ico" href="Images/img1.png">
 </head>
 <body>
     
   <section>
+      <div class="circle"></div>
       <header>
           <a href="#" class="logo"><img src="Images/logo.png" alt=""></a>
           <ul>
@@ -18,10 +20,38 @@
               <li><a href="#">What's new</a></li>
               <li><a href="#">Contact</a></li>
           </ul>  
-      
         </header>
+        <div class="content">
+          <div class="textBox">
+            <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dolor dolores quisquam, repellat adipisci molestiae? Impedit molestias, porro doloremque quod, aut facere illo perferendis iusto sequi natus iure, at unde.</p>
+            <a href="">learn more</a>
+          </div>
+          <div class="imgBox">
+            <img src="Images/img1.png" class="starbucks" alt="">
+          </div>
+        </div>
+        <ul class="thumb">
+          <li><img src="Images/thumb1.png" onclick="imgSlider('img1.png'); changeCricleColor('#017143')"></li>
+          <li><img src="Images/thumb2.png" onclick="imgSlider('img2.png'); changeCricleColor('#eb7495')"></li>
+          <li><img src="Images/thumb3.png" onclick="imgSlider('img3.png'); changeCricleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+          <li><a href=""><img src="Images/facebook.png" alt=""></a></li>
+          <li><a href=""><img src="Images/twitter.png" alt=""></a></li>
+          <li><a href=""><img src="Images/instagram.png" alt=""></a></li>
+        </ul>
   </section>
     
+  <script type="text/javascript">
+    function imgSlider(imgName){
+      document.querySelector('.starbucks').src = "Images/"+imgName;
+    }
 
+    function changeCricleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
 </body>
 </html>
